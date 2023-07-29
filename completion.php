@@ -8,8 +8,12 @@
 </style>
 
 <?php
-require_once 'connect_database.php';
+// Validation
 require_once 'validation.php';
+// DB接続
+require_once 'connect_database.php';
+// DB処理
+require_once 'crud.php';
 ?>
 
 <head>
@@ -21,12 +25,6 @@ require_once 'validation.php';
 </head>
 
 <body>
-    <!-- validation -->
-    <?php if ($_SERVER["REQUEST_METHOD"] == "POST"){
-        $title = htmlspecialchars($_POST['title'], ENT_QUOTES);
-        $content = htmlspecialchars($_POST['content'], ENT_QUOTES);
-    } ?>
-
     <div class="container mt-5">
         <p class="success">Success</p>
         <a href="index.php">Back to Top</a>

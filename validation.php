@@ -1,8 +1,6 @@
-<?
-$transition_source = $_SERVER['HTTP_REFERER'];
-var_dump($transition_source);
-echo 'hellow';
-exit;
-// if($transition_source == article_submission){
-
-// }
+<?php
+// error_reporting(0);
+if ($_POST['article_submission_flg'] == 1) {
+    $title = htmlspecialchars($_POST['title'], ENT_QUOTES);
+    $content = htmlspecialchars($_POST['content'], ENT_QUOTES);
+}

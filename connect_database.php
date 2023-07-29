@@ -1,10 +1,8 @@
 <?php
 $user = 'root';
 $pass = 'test';
-try{
+try {
     $dbh = new PDO('mysql:host=localhost;dbname=bulletin_board', $user, $pass);
-    echo 'success';
 } catch (PDOException $e) {
-    echo 'false';
+    echo "エラー: " . $e->getMessage();
 }
-?>

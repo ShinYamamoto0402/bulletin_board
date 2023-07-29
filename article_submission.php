@@ -21,7 +21,7 @@
                 <label for="content">記事本文</label>
                 <textarea class="form-control" id="content" name="content" rows="8" placeholder="記事の内容を入力してください" required></textarea>
             </div>
-            <button type="submit" class="btn btn-primary">投稿する</button>
+            <button type="submit" name="article_submission_flg" value="1" class="btn btn-primary">投稿する</button>
         </form>
     </div>
 
