@@ -1,29 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>新規会員登録</title>
-  <!-- BootstrapのCSSファイルを読み込む -->
+  <meta charset="UTF-8">
+  <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
+
+<body>
+</body>
+
+</html>
+
 <body>
 
-<div class="container mt-5">
-  <form>
-    <div class="form-group">
-      <label for="username">ユーザーネーム</label>
-      <input type="text" class="form-control" id="username" placeholder="ユーザーネームを入力してください">
-    </div>
-    <div class="form-group">
-      <label for="password">パスワード</label>
-      <input type="password" class="form-control" id="password" placeholder="パスワードを入力してください">
-    </div>
-    <button type="submit" class="btn btn-primary">登録する</button>
-  </form>
-</div>
+  <?php require_once 'nav.php' ?>
 
-<!-- BootstrapのJavaScriptファイルを読み込む -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <div class="container mt-5">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <h2 class="text-center mb-4">新規会員登録</h2>
+        <form>
+          <div class="form-group">
+            <label for="username">ユーザー名</label>
+            <input type="text" class="form-control" id="username" placeholder="ユーザー名を入力してください" required>
+          </div>
+          <div class="form-group">
+            <label for="password">パスワード</label>
+            <input type="password" class="form-control" id="password" placeholder="パスワードを入力してください" required>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">ログイン</button>
+        </form>
+      </div>
+    </div>
+  </div>
 </body>
-</html>
+
+<!-- Bootstrap JavaScript -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>

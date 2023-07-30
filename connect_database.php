@@ -1,6 +1,6 @@
 <?php
 $user = 'root';
-$pass = 'test';
+$pass = 'root';
 try {
     $dbh = new PDO('mysql:host=localhost;dbname=bulletin_board', $user, $pass);
 } catch (PDOException $e) {

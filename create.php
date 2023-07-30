@@ -1,4 +1,5 @@
 <?php
+// 記事投稿処理
 $sql = 'INSERT INTO article_details (titles, contents) VALUE (:titles, :contents)';
 $stmt = $dbh->prepare($sql);
 $stmt->bindValue(':titles', $title);

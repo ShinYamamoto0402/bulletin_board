@@ -14,6 +14,9 @@
 </html>
 
 <body>
+
+    <?php require_once 'nav.php' ?>
+
     <div class="container mt-5">
         <div class="row justify-content-center">
             <div class="col-md-6">
